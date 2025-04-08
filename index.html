@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./custom.css" />
+    <!-- FONT AWESOME LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FONTY GOOGLE LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Gupter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Výtisk - At the TOP</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="overlay"></div>
+      <section
+        id="home"
+        class="header-banner d-flex justify-content-center align-items-center"
+      >
+        <div class="header-content container text-white text-center">
+          <h3 class="text-uppercase display-5 m-0">_____ Hotel _____</h3>
+          <h1 class="text-uppercase display-1">At The TOP</h1>
+          <p class="d-none d-md-block">a luxurious experience</p>
+          <!-- Formuláře-->
+          <div class="container">
+            <div class="row d-block">
+              <div class="col-8 col-lg-6 mx-auto">
+                <form>
+                  <h2>Quick booking</h2>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Tom"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="surename" class="form-label">Surename</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="surename"
+                      placeholder="Cruise"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="example@xxx.com"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="tel" class="form-label">Phone number</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="tel"
+                      placeholder="+420 123 456 789"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="book-number" class="form-label"
+                      >Number of travellers</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="book-number"
+                      placeholder="1"
+                      min="1"
+                      max="20"
+                    />
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="mb-3">
+                        <label for="arrival" class="form-label"
+                          >Date of arrival:</label
+                        >
+                        <input type="date" class="form-control" id="arrival" />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="mb-3">
+                        <label for="departure" class="form-label"
+                          >Date of departure:</label
+                        >
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="departure"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Your message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="4"
+                      placeholder="Please specify room type in this message..."
+                    ></textarea>
+                  </div>
+                </form>
+                <div class="row">
+                  <div class="col-6">
+                    <button type="submit" class="btn btn-primary">
+                      BOOK NOW
+                    </button>
+                  </div>
+                  <div class="col-6">
+                    <button
+                      type="button"
+                      class="btn btn-lg btn-primary text-uppercase px-5"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal"
+                    >
+                      Virtual tour
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Formuláře konec -->
+        </div>
+      </section>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <span class="brand">AT THE TOP</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#history">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galery">Galery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#modal"
+                >Book</a
+              >
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="history">
+        <div class="container">
+          <h3 class="text-center text-uppercase p-3">History</h3>
+          <div class="row">
+            <div class="col-12 col-lg-6 pb-3">
+              <div class="row">
+                <div class="col">
+                  <p>
+                    <span class="fontGupter">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Error aliquid accusamus, et atque veritatis omnis eum at.
+                      Expedita soluta eaque repellat, quis, eligendi aut
+                      temporibus officia dicta vero hic dolorem nostrum qui
+                      commodi incidunt magnam quia optio magni at, nemo aliquam
+                      exercitationem iusto accusamus repudiandae? Nam enim
+                      expedita sapiente eius at dolores optio, nemo recusandae
+                      ipsam iure molestiae harum odit!</span
+                    >
+                  </p>
+                </div>
+                <div class="col">
+                  <p>
+                    <span class="fontArabic">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nulla excepturi unde assumenda porro voluptas accusamus
+                      saepe dolore amet voluptatum! Qui impedit, consequatur,
+                      necessitatibus doloremque vero voluptate ratione natus
+                      maiores quis eos illo voluptates blanditiis quo optio
+                      aspernatur a velit explicabo numquam! Animi nisi cum
+                      tempora.</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="container">
+                <img
+                  class="img-fluid d-none d-sm-block"
+                  src="images/history.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing">
+        <div class="container p-3">
+          <h3 class="text-center text-uppercase">Prices</h3>
+          <div class="row">
+            <div
+              class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch p-3"
+            >
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./images/experience.jpg"
+                  alt="nature"
+                />
+                <div class="card-body text-center d-flex flex-column">
+                  <h5 class="card-title text-uppercase text-primary">
+                    Economy
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga repudiandae a sapiente beatae ullam aliquam. Iure
+                    ducimus voluptates eveniet distinctio!
+                  </p>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Persons</th>
+                        <th scope="col">Night</th>
+                        <th scope="col">Week</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>30 $</td>
+                        <td>135 $</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>40 $</td>
+                        <td>195 $</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>50 $</td>
+                        <td>235 $</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a href="#" class="btn btn-lg btn-outline-primary mt-auto"
+                    >Book</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch p-3"
+            >
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./images/explore.jpg"
+                  alt="city"
+                />
+                <div class="card-body text-center d-flex flex-column">
+                  <h5 class="card-title text-uppercase text-primary">
+                    Standart
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima, officiis! Optio reprehenderit fugiat deserunt fugit.
+                    Itaque asperiores deleniti praesentium blanditiis.
+                  </p>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Persons</th>
+                        <th scope="col">Night</th>
+                        <th scope="col">Week</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>30 $</td>
+                        <td>135 $</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>40 $</td>
+                        <td>195 $</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>50 $</td>
+                        <td>235 $</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a href="#" class="btn btn-lg btn-outline-primary mt-auto"
+                    >Book</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch p-3"
+            >
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./images/experience2.jpg"
+                  alt="nature"
+                />
+                <div class="card-body text-center d-flex flex-column">
+                  <h5 class="card-title text-uppercase text-primary">Deluxe</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga repudiandae a sapiente beatae ullam aliquam. Iure
+                    ducimus voluptates eveniet distinctio!
+                  </p>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Persons</th>
+                        <th scope="col">Night</th>
+                        <th scope="col">Week</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>30 $</td>
+                        <td>135 $</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>40 $</td>
+                        <td>195 $</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>50 $</td>
+                        <td>235 $</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a href="#" class="btn btn-lg btn-outline-primary mt-auto"
+                    >Book</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch p-3"
+            >
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./images/explore2.jpg"
+                  alt="city"
+                />
+                <div class="card-body text-center d-flex flex-column">
+                  <h5 class="card-title text-uppercase text-primary">
+                    Superior
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima, officiis! Optio reprehenderit fugiat deserunt fugit.
+                    Itaque asperiores deleniti praesentium blanditiis.
+                  </p>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Persons</th>
+                        <th scope="col">Night</th>
+                        <th scope="col">Week</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>30 $</td>
+                        <td>135 $</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>40 $</td>
+                        <td>195 $</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>50 $</td>
+                        <td>235 $</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a href="#" class="btn btn-lg btn-outline-primary mt-auto"
+                    >Book</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="galery">
+        <div class="container p-3">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+
+            <h3 class="text-center text-uppercase">Galery</h3>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/carousel1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+
+                  <div class="carousel-caption d-none d-md-block popisek">
+                    <h5>First slide label</h5>
+                    <p>
+                      Some representative placeholder content for the first
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/carousel2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block popisek">
+                    <h5>Second slide label</h5>
+                    <p>
+                      Some representative placeholder content for the second
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/carousel3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block popisek">
+                    <h5>Third slide label</h5>
+                    <p>
+                      Some representative placeholder content for the third
+                      slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container mb-5 p-3">
+          <h3 class="text-center text-uppercase">Contact us</h3>
+          <div class="row">
+            <div class="col-12 col-lg-4 pb-3 text-center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.178510207685!2d55.271801475929884!3d25.197201831699545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2zQnVyZMW-IENoYWzDrWZh!5e0!3m2!1scs!2scz!4v1722419167199!5m2!1scs!2scz"
+                width="400"
+                height="350"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="col-12 col-lg-4 pb-3 text-center">
+              <div class="row my-5">
+                <a href="#"><i class="fa-brands fa-facebook icons"></i></a>
+              </div>
+              <div class="row my-5">
+                <a href="#"><i class="fa-brands fa-x-twitter icons"></i></a>
+              </div>
+              <div class="row my-5">
+                <a href="#"><i class="fa-brands fa-instagram icons"></i></a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 pb-3 text-center">
+              <i class="fa-solid fa-house"></i>
+              <p>
+                <strong>Burj Chalifa - hotel AT THE TOP</strong><br />
+                Sharm El Sheik, 1<br />
+                Dubai<br />
+                UAE
+              </p>
+              <i class="fa-solid fa-phone"></i>
+              <p>+420 739 631 243</p>
+              <i class="fa-solid fa-envelope"></i>
+              <p>booking@atthetop.uae</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="foot">
+        <div>&copy;Petr Výtisk 2024</div>
+      </div>
+    </footer>
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-primary" id="staticBackdropLabel">
+              Virtual tour
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <iframe
+                width="450"
+                height="315"
+                src="https://www.youtube.com/embed/0E3uPvuAa-4?si=WfsAOXjuBFTU2iSg"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SCRIPT -->
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script>
+      //navbar
+      document.addEventListener("DOMContentLoaded", () => {
+        const navLinks = document.querySelectorAll(".nav-link");
+        const navbarMenu = document.querySelector("#navbarNav");
+        const bsCollapse = new bootstrap.Collapse(navbarMenu, {
+          toggle: false,
+        });
+
+        const collapseNavbar = () => {
+          if (window.innerWidth < 992) {
+            bsCollapse.hide();
+          }
+        };
+        navLinks.forEach((link) =>
+          link.addEventListener("click", collapseNavbar)
+        );
+
+        //modal
+        document.querySelectorAll(".modal").forEach(function (modal) {
+          modal.addEventListener("hide.bs.modal", function () {
+            const memory = this.innerHTML;
+            this.innerHTML = memory;
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
